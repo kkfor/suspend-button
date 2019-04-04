@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SuspendButton from './suspendButton'
+import SuspendButton from '../../src'
 import logo from './logo.svg'
 
 class App extends Component {
