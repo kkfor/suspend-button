@@ -1,14 +1,14 @@
 {
-  "main.css": "/suspendbutton/static/css/main.e2a26a15.chunk.css",
-  "main.js": "/suspendbutton/static/js/main.c7f461f7.chunk.js",
-  "main.js.map": "/suspendbutton/static/js/main.c7f461f7.chunk.js.map",
-  "runtime~main.js": "/suspendbutton/static/js/runtime~main.9fbe8758.js",
-  "runtime~main.js.map": "/suspendbutton/static/js/runtime~main.9fbe8758.js.map",
-  "static/js/2.59f7fd83.chunk.js": "/suspendbutton/static/js/2.59f7fd83.chunk.js",
-  "static/js/2.59f7fd83.chunk.js.map": "/suspendbutton/static/js/2.59f7fd83.chunk.js.map",
-  "index.html": "/suspendbutton/index.html",
-  "precache-manifest.98ed7166afb64020b5f4e52a9490eee6.js": "/suspendbutton/precache-manifest.98ed7166afb64020b5f4e52a9490eee6.js",
-  "service-worker.js": "/suspendbutton/service-worker.js",
-  "static/css/main.e2a26a15.chunk.css.map": "/suspendbutton/static/css/main.e2a26a15.chunk.css.map",
-  "static/media/logo.svg": "/suspendbutton/static/media/logo.5d5d9eef.svg"
+  "main.css": "/suspend-button/static/css/main.06544d7e.chunk.css",
+  "main.js": "/suspend-button/static/js/main.20739908.chunk.js",
+  "main.js.map": "/suspend-button/static/js/main.20739908.chunk.js.map",
+  "runtime~main.js": "/suspend-button/static/js/runtime~main.60d46c89.js",
+  "runtime~main.js.map": "/suspend-button/static/js/runtime~main.60d46c89.js.map",
+  "static/js/2.59f7fd83.chunk.js": "/suspend-button/static/js/2.59f7fd83.chunk.js",
+  "static/js/2.59f7fd83.chunk.js.map": "/suspend-button/static/js/2.59f7fd83.chunk.js.map",
+  "index.html": "/suspend-button/index.html",
+  "precache-manifest.292d345d710c0824f672f1a726fc942a.js": "/suspend-button/precache-manifest.292d345d710c0824f672f1a726fc942a.js",
+  "service-worker.js": "/suspend-button/service-worker.js",
+  "static/css/main.06544d7e.chunk.css.map": "/suspend-button/static/css/main.06544d7e.chunk.css.map",
+  "static/media/logo.svg": "/suspend-button/static/media/logo.5d5d9eef.svg"
 }
