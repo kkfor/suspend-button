@@ -1,8 +1,29 @@
 {
   "name": "suspend-button",
   "version": "0.1.0",
-  "private": true,
+  "description": "react suspend button",
   "homepage": "http://kkfor.github.io/suspend-button",
+  "keywords": [
+    "suspeng-button",
+    "react"
+  ],
+  "author": "kkfor",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "bugs": {
+    "url": "https://github.com/kkfor/suspend-button/issues"
+  },
+  "files": [
+    "dist/",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node scripts/start.js",
+    "build": "node scripts/build.js",
+    "test": "node scripts/test.js",
+    "dist": "webpack --config config/webpackDist.config.js",
+    "deploy": "gh-pages -d build"
+  },
   "dependencies": {
     "@babel/core": "7.2.2",
     "@svgr/webpack": "4.1.0",
@@ -49,16 +70,14 @@
     "style-loader": "0.23.1",
     "terser-webpack-plugin": "1.2.2",
     "url-loader": "1.1.2",
-    "webpack": "4.28.3",
     "webpack-dev-server": "3.1.14",
     "webpack-manifest-plugin": "2.0.4",
     "workbox-webpack-plugin": "3.6.3"
   },
-  "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js",
-    "deploy": "gh-pages -d build"
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.3.0"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -118,8 +137,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
   }
 }
