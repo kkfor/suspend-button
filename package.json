@@ -18,7 +18,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "start": "webpack-dev-server --config config/webpackDev.config.js",
+    "start": "webpack-dev-server --config config/webpack.dev.config.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "dist": "webpack --config config/webpackDist.config.js",

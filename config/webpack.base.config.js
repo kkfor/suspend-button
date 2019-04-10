@@ -1,4 +1,3 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   mode: 'development',
   entry: './example/src/index.js',
@@ -29,13 +28,5 @@ module.exports = {
         use: 'url-loader'
       }
     ]
-  },
-  devServer: {
-    
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './example/index.html'
-    })
-  ]
+  }
 }
