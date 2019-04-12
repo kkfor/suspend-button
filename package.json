@@ -21,7 +21,7 @@
     "start": "webpack-dev-server --config config/webpack.dev.config.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "dist": "webpack --config config/webpackDist.config.js",
+    "dist": "webpack --config config/webpack.dist.config.js",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
@@ -42,7 +42,8 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
-    "webpack-dev-server": "^3.3.1"
+    "webpack-dev-server": "^3.3.1",
+    "webpack-merge": "^4.2.1"
   },
   "browserslist": [
     ">0.2%",

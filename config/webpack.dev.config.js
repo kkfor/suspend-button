@@ -1,6 +1,9 @@
+const merge = require('webpack-merge')
+const webpackBaseConfig = require('./webpack.base.config')
+
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = {
+module.exports = merge(webpackBaseConfig, {
   mode: 'development',
   devServer: {
     
@@ -10,4 +13,4 @@ module.exports = {
       template: './example/index.html'
     })
   ]
-}
+})
