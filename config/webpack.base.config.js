@@ -1,5 +1,7 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
-  entry: './example/src/index.js',
+  entry: './example/index.js',
   resolve: {
     extensions: ['.js', '.jsx']
   },
@@ -28,5 +30,10 @@ module.exports = {
         use: 'url-loader'
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './example/index.html'
+    })
+  ]
 }

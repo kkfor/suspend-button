@@ -4,9 +4,8 @@ const webpackBaseConfig = require('./webpack.base.config')
 
 module.exports = merge(webpackBaseConfig, {
   mode: 'production',
-  entry: './src/index.jsx',
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, '../build'),
     filename: 'index.js',
     publicPath: '/',
   }
