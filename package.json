@@ -19,8 +19,7 @@
   ],
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.dev.config.js",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js",
+    "build": "webpack --config config/webpack.build.config.js",
     "dist": "webpack --config config/webpack.dist.config.js",
     "deploy": "gh-pages -d build"
   },
@@ -30,7 +29,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
-    "@babel/preset-env": "^7.4.3",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",

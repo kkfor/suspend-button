@@ -1,12 +1,5 @@
 const path = require('path')
 
-process.env.BABEL_ENV = 'production';
-process.env.NODE_ENV = 'production';
-
-const resolve = dir => {
-  return path.resolve(__dirname, '..', dir)
-}
-
 module.exports = {
   mode: 'production',
   entry: './src/index.jsx',
@@ -14,13 +7,6 @@ module.exports = {
     path: path.resolve(__dirname, '../dist'),
     filename: 'index.js',
     publicPath: '/',
-    libraryTarget: 'umd'
-  },
-  resolve: {
-    extensions: ['.js', '.jsx'],
-    alias: {
-      '@': resolve('src')
-    }
   },
   module: {
     rules: [

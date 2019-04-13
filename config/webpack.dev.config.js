@@ -6,7 +6,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = merge(webpackBaseConfig, {
   mode: 'development',
   devServer: {
-    
+    inline: true,
+    hot: true,
+    port: 3000
   },
   plugins: [
     new HtmlWebpackPlugin({
