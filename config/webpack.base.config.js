@@ -1,5 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+const isProd = process.env.NODE_ENV === 'production'
+const isDev = process.env.NODE_ENV === 'development'
+
 module.exports = {
   entry: './example/index.js',
   devtool: 'source-map',
@@ -25,7 +28,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true,
+              sourceMap: isDev,
               importLoaders: 1
             }
           },
@@ -33,7 +36,7 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               plugins: [require('autoprefixer')],
-              sourceMap: true
+              sourceMap: isDev
             }
           }
         ]
@@ -45,20 +48,20 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true
+              sourceMap: isDev
             }
           },
           {
             loader: 'postcss-loader',
             options: {
               plugins: [require('autoprefixer')],
-              sourceMap: true
+              sourceMap: isDev
             },
           },
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true
+              sourceMap: isDev
             }
 
           }

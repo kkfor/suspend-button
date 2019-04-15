@@ -7,6 +7,7 @@ module.exports = merge(webpackBaseConfig, {
     inline: true,
     hot: true,
     port: 3000,
-    open: true
+    open: true,
+    noInfo: true
   },
 })

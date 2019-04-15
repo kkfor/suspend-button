@@ -18,9 +18,9 @@
     "LICENSE"
   ],
   "scripts": {
-    "start": "webpack-dev-server --config config/webpack.dev.config.js",
-    "build": "webpack --config config/webpack.build.config.js",
-    "dist": "webpack --config config/webpack.dist.config.js",
+    "start": "NODE_ENV=development webpack-dev-server --config config/webpack.dev.config.js",
+    "build": "NODE_ENV=production webpack --config config/webpack.build.config.js",
+    "dist": "NODE_ENV=production webpack --config config/webpack.dist.config.js",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
