@@ -2,12 +2,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './example/index.js',
+  devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx']
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
@@ -19,9 +19,23 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
+        use: [{
+            loader: 'style-loader'
+          },
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true,
+              importLoaders: 1
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: [require('autoprefixer')],
+              sourceMap: true
+            }
+          }
         ]
       },
       {
@@ -31,17 +45,23 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              importLoaders: 0
+              sourceMap: true
             }
           },
           {
             loader: 'postcss-loader',
             options: {
-              plugins: [require('autoprefixer')]
+              plugins: [require('autoprefixer')],
+              sourceMap: true
+            },
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
             }
 
-          },
-          'sass-loader'
+          }
         ]
       },
       {
