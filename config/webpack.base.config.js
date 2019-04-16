@@ -5,7 +5,7 @@ const isDev = process.env.NODE_ENV === 'development'
 
 module.exports = {
   entry: './example/index.js',
-  devtool: 'source-map',
+  devtool: isDev && 'source-map',
   resolve: {
     extensions: ['.js', '.jsx']
   },

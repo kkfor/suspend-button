@@ -7,6 +7,6 @@ module.exports = merge(webpackBaseConfig, {
   output: {
     path: path.resolve(__dirname, '../build'),
     filename: 'index.js',
-    publicPath: '/',
+    publicPath: '/suspend-button/',
   }
 })
