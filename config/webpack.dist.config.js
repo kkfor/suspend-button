@@ -9,5 +9,6 @@ module.exports = merge(webpackBaseConfig, {
     path: path.resolve(__dirname, '../dist'),
     filename: 'index.js',
     publicPath: '/',
+    libraryTarget: 'umd'
   }
 })

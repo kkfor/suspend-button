@@ -1,5 +1,3 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-
 const isProd = process.env.NODE_ENV === 'production'
 const isDev = process.env.NODE_ENV === 'development'
 
@@ -100,10 +98,5 @@ module.exports = {
         use: 'url-loader'
       }
     ]
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './example/index.html'
-    })
-  ]
+  }
 }
