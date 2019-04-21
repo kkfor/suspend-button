@@ -11,9 +11,6 @@ class suspendButton extends Component {
     this.$vm = null // 悬浮按钮
     this.moving = false // 移动状态
 
-    this.lastX = null // 偏移量
-    this.lastY = null
-
     this.oW = null // 悬钮距离
     this.oH = null
 
@@ -33,6 +30,9 @@ class suspendButton extends Component {
 
     this.oW = e.clientX - this.$vm.getBoundingClientRect().left
     this.oH = e.clientY - this.$vm.getBoundingClientRect().top
+
+    this.htmlWidth = document.documentElement.clientWidth
+    this.htmlHeight = document.documentElement.clientHeight
 
     this.bWidth = this.$vm.offsetWidth
     this.bHeight = this.$vm.offsetHeight
@@ -89,9 +89,6 @@ class suspendButton extends Component {
         passive: false
       }
     )
-
-    this.htmlWidth = document.documentElement.clientWidth
-    this.htmlHeight = document.documentElement.clientHeight
   }
 
   // 开始移动
@@ -126,7 +123,7 @@ class suspendButton extends Component {
   }
 
   render() {
-    const { img } = this.props
+    const { img, style } = this.props
     return (
       <span
         className="t-suspend-button"
@@ -136,10 +133,11 @@ class suspendButton extends Component {
         onTouchEnd={e => this.onTouchEnd(e)}
         style={{
           left: `${this.state.oLeft}px`,
-          top: `${this.state.oTop}px`
+          top: `${this.state.oTop}px`,
+          ...style
         }}
       >
-        <img src={img} alt="" />
+        {img && <img src={img} alt="" />}
       </span>
     )
   }
