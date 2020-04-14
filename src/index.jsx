@@ -123,7 +123,7 @@ class suspendButton extends Component {
   }
 
   render() {
-    const { img, style } = this.props
+      const { img, style, imgStyle } = this.props
     return (
       <span
         className="t-suspend-button"
@@ -137,7 +137,7 @@ class suspendButton extends Component {
           ...style
         }}
       >
-        {img && <img src={img} alt="" />}
+        {img && <img src={img} style={imgStyle} alt="" />}
       </span>
     )
   }
